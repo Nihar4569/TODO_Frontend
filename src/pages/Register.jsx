@@ -34,7 +34,7 @@ const Register = () => {
       setIsAuthenticated(true);
       setLoading(false);
     } catch (error) {
-      toast.error(error.response.data.message, 'register');
+      toast.error(error.response.data.message + 'register');
       setIsAuthenticated(false);
       setLoading(false);
     }
